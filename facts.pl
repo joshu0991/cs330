@@ -1,4 +1,4 @@
-approved_list(cs,[cs211,cs330,cs450,cs480,phys211,phys212]).
+approved_list(cs,[cs210,cs330,cs450,cs480,phys211,phys212]).
 approved_list(geog,[geol101,geog309,eos310,eos312,math113]).
 
 prereq(cs211,cs330).
