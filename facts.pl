@@ -14,6 +14,7 @@ prereq(geol101,geol309).
 prereq(eos310,eos312).
 
 student(bob,12345,cs).
+student(sally,14511,cs).
 student(john,54321,geog).
     entry(12345,cs330,[fall,2008]).
     entry(12345,cs211,[summer,2008]).
@@ -21,3 +22,8 @@ student(john,54321,geog).
 
     entry(54321,geog101,[spring,2008]).
     entry(54321,cs330,[spring,2008]).
+    
+    entry(14511,cs330,[fall,2008]).
+    entry(14511,cs211,[fall,2008]).
+    entry(14511,phys211,[fall,2008]).
+    entry(14511,phys212,[fall,2009]).

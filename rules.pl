@@ -1,10 +1,14 @@
 prereq_chain(X,Y) :- prereq(X,Y).
 prereq_chain(X, Y) :- prereq(X,Z).
- 
+/* 
 bad_course(X,Y) :- student(X,N,M), entry(N,Y,_), approved_list(M,L), member(Y,L), !,fail.
 bad_course(X,Y) :- student(X,N,M), entry(N,Y,_).
+*/
 
-no_bad_courses(X).
+bad_course(X,Y) :- student(X,N,M), entry(N,Y,_), approved_list(O,L), not(M = O), member(Y,L).
+
+no_bad_courses(X) :- bad_course(X,_), !, fail.
+no_bad_courses(_).
 
 missing_course(X,Y).
 
