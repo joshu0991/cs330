@@ -22,4 +22,9 @@ no_bad_courses(X), no_bad_courses(_).
 /* Is there a person missing cs 450? Should return true bob is registered for cs 480 which has cs 450 as a prerequisite  and doesn't have an entry for cs 450*/
 missing_course(_,cs450).
 
-
+/* 
+ * is bob missing cs450 and is john missing cs 211 (note john is not a cs major will still succeed since thar doesn't matter for missing course is is cs 330 a 
+ * bad course for john and there exists someone that doesn't have any bad courses and cs211 is a prerequsit of cs 480 and the semester summer 2015 is after summer 2010
+ * this will return true
+ */
+missing_course(bob,cs450), missing_course(john,cs211), bad_course(john,cs330), no_bad_courses(_), prereq_chain(cs211,cs480), notbefore([summer,2015],[summer,2010]). 
