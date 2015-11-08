@@ -1,4 +1,4 @@
-/* Is bob registered for cs450, which is a course he isn't allowed to take? AND is bob missing a prerequisit for that course? will fail since bob is a cs major*/
+/* Is bob registered for cs450, which is a course he isn't allowed to take? AND is bob missing a prerequisit for that course? will fail since bob is a cs major */
 bad_course(bob,cs450), missing_course(bob,cs450). 
 
 /* Is bob allowed to take geol101 and is geol101 a prereq of geol 309? should return true*/
@@ -12,6 +12,9 @@ bad_course(john, _).
 
 /* is there a seasson that is before fall 2010 in the same year? Should return true since fall is the last seasson.*/
 notbefore([fall,2010], [_,2010]).
+
+/* what is the sesson before fall?*/
+notbefore([fall,2010], [X,2010]).
 
 /* Is there a person that has scedhuled a course that is not approved for their major?*/
 bad_course(_,cs330).
