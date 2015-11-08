@@ -23,6 +23,7 @@ student(john,54321,geog).
 
     entry(54321,geog101,[spring,2008]).
     entry(54321,cs330,[spring,2008]).
+    entry(54321,eos312,[spring,2008]).
     
     entry(14511,cs330,[fall,2008]).
     entry(14511,cs211,[fall,2008]).
