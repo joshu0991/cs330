@@ -1,3 +1,6 @@
+consult(rules).
+consult(facts).
+
 /* Is bob registered for cs450, which is a course he isn't allowed to take? AND is bob missing a prerequisit for that course? will fail since bob is a cs major */
 bad_course(bob,cs450), missing_course(bob,cs450). 
 
