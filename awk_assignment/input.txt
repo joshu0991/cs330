@@ -1,0 +1,8 @@
+Smith, Jim 12.34
+Jim Smith 12.34
+12.34 Smith, Jim
+12.34 Jim Smith
+Doe, Jane 13.30
+Jane Doe 1.34
+12.03 Doe, Jane
+6.96 Jane Doe
